@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>KineSensors</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<p id="version">1.6.61</p>
+
+
+
+<pre id="xPos"></pre>
+<pre id="dir"></pre>
+	<span id="valInDegrees"></span>* si cette valeur reste à 0, cet appareil n'est probablement pas équipé de gyroscope
+	<p class="values">Direction : <span id="valueDir"></span></p>
+	<!-- <canvas class="values" id="canvas"></canvas> -->
+	<canvas width="100px" height="100px" id="graph"></canvas>
+
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="mychart.js"></script>
+</body>
+</html>

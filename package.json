@@ -1,0 +1,22 @@
+{
+  "name": "beuh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lorest/fruitsausirop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lorest/fruitsausirop/issues"
+  },
+  "homepage": "https://github.com/Lorest/fruitsausirop#readme",
+  "dependencies": {
+    "chart.js": "^2.7.0"
+  }
+}
