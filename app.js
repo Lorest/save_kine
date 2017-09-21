@@ -61,11 +61,16 @@
 		var triggerTime = null;
 		var speed = null;
 		var dir = "Face";
+		var data = {};
+		data.values = [];
+		data.labels = [];
 
 		window.addEventListener("deviceorientation", function(eventOrientation) {
 			console.log(performance.now() + " -%c EventListenerTriggered ", 'background: #16e;');
 			var rotation = eventOrientation.alpha;
-
+			data.values.push(rotation);
+			data.labels.push(performance.now());
+			graph(data);
 			valInDeg.innerHTML = rotation + '°';
 
 				eventOrientation.preventDefault();
