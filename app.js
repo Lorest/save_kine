@@ -68,6 +68,9 @@
 		window.addEventListener("deviceorientation", function(eventOrientation) {
 			console.log(performance.now() + " -%c EventListenerTriggered ", 'background: #16e;');
 			var rotation = eventOrientation.alpha;
+			if (rotation > 180) {
+				rotation = (360 - rotation);
+			} 
 			data.values.push(rotation);
 			data.labels.push(performance.now());
 			graph(data);
